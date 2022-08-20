@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+*{
+    font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.title {
+    color: #3e4c59;
+    font-size: 40px;
+    font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-container{
+   border: 2px solid rgb(230, 224, 224);
+   border-radius: 10px;
+   width: 70%;
+   display: flex;
+   justify-content: center;
+   padding: 5px;
+   background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input-container input{
+   width: 95%;
+   outline: none;
+   border: none;
+   font-size: 20px;
+   padding-left: 10px;
+   padding-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-container button{
+    background-color: transparent;
+    color: #4aadc2;
+    border: 2px solid #4aadc2;
+    width: 100px;
+    padding: 10px; 
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.input-container button:hover{
+    background-color: #4aadc2;
+    color: white;
+    transition: 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resultProducts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/******************************** Styling for product cards */
+.product-card{
+ width: 250px;
+ height: 400px;
+ display: flex;
+ flex-direction: column;
+
+ box-shadow: 2px 2px 2px 2px rgb(216, 208, 208);
+ border-radius: 10px;
+ margin: 20px;
+ padding: 10px;
+}
+
+.product_image{
+ width: 250px;
+ height: 250px;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+}
+
+.product-card h3{
+    margin: 10px;
+    color: #3e4c59;
+}
+.product-card span{
+    margin: 10px;
+    color: #4aadc2;
+    font-weight: bold;
 }
